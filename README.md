@@ -1,1 +1,6 @@
+Client <- PROTOCOL -> Server
+	Browser -> Request -> Server 	
+	Browser <- Response <- Server
+
+
 Curso de nodejs posusi um [grupo no Facebook](https://www.facebook.com/groups/458536931149217/)
