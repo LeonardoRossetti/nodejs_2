@@ -1,0 +1,22 @@
+{
+  "name": "portal_noticias",
+  "version": "1.0.0",
+  "description": "site de noticias",
+  "main": "noticias.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeonardoRossetti/nodejs_2.git"
+  },
+  "author": "LeonardoRossetti",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeonardoRossetti/nodejs_2/issues"
+  },
+  "homepage": "https://github.com/LeonardoRossetti/nodejs_2#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
