@@ -7,3 +7,4 @@ Curso de nodejs posusi um [grupo no Facebook](https://www.facebook.com/groups/45
 
 `npm init`
 `npm install express -save`
+`npm install ejs --save`
