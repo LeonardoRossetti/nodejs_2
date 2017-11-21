@@ -1,5 +1,5 @@
-Client <- PROTOCOL -> Server
-	Browser -> Request -> Server 	
+Client <- PROTOCOL -> Server <br>
+	Browser -> Request -> Server <br> 	
 	Browser <- Response <- Server
 
 
