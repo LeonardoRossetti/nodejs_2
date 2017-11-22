@@ -1,6 +1,22 @@
-var express = require('express'); //recupera biblioteca express
-var app = express(); //executa a função que o modulo express retorna
+/**
+ * Recover the library express.
+ */
+var express = require('express'); 
 
-app.set('view engine', 'ejs'); //agora o express sabe que o ejs será a nossa engine de views
+/**
+ * Execute the function that the module express returns.
+ */
+var app = express(); 
+
+/**
+ * Now the express knows that the ejs will be our engine of views.
+ */
+app.set('view engine', 'ejs'); 
+
+/**
+ * Directory where are the views, remember that the path of the archieve will be 
+ * find from local where we call this function. That is from app.js.
+ */
+app.set('views', './app/views');
 
 module.exports = app;

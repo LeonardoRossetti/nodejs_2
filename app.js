@@ -1,17 +1,16 @@
 var app = require('./config/server');
 
-app.get('/', function(req, res){ //feito chamada para a pagina principal
-    res.render("home/index");
-})
+/**
+ * Routes
+ */
+var homeRoute = require('./app/routes/home')(app);
+var includeNewsRoute = require('./app/routes/include_news')(app);
+var newsRoute = require('./app/routes/news');
+newsRoute(app); //Just another way to do the same thing
 
-app.get('/inclusao_noticia', function(req, res){
-    res.render("admin/form_add_noticia");
-})
-
-app.get('/noticias', function(req, res){ 
-    res.render("noticias/noticias");
-})
-
+/**
+ * Server running
+ */
 app.listen(3000, function(){
-    console.log('Servidor rodando com Express na porta 3000!');
+    console.log('Server is running on Express in the port 3000!');
 });
