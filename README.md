@@ -21,8 +21,8 @@ npm install mysql --save
 Installed manual executable of mysql too.
 
 **To execute MySQL commands:**
-Enter on CMD IN: C:\Program Files\MySQL\MySQL Server 5.7\bin>
-And execute: mysql -u root -p
+Enter on CMD IN: C:\Program Files\MySQL\MySQL Server 5.7\bin> <br>
+And execute: mysql -u root -p<br>
 `show databases;` <br>
 `create database portal_noticias;` <br>
 `use portal_noticias;` <br>
