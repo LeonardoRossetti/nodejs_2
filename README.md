@@ -18,9 +18,9 @@ npm install -g nodemon
 npm install mysql --save
 ```
 
-Installed manual executable of mysql too.
 
 ## To execute MySQL commands:
+Installed manual executable of mysql too.
 Enter on **CMD** IN: C:\Program Files\MySQL\MySQL Server 5.7\bin> <br>
 And execute: mysql -u root -p<br>
 `show databases;` <br>
