@@ -21,7 +21,7 @@ npm install mysql --save
 Installed manual executable of mysql too.
 
 **To execute MySQL commands:** <br>
-Enter on CMD IN: C:\Program Files\MySQL\MySQL Server 5.7\bin> <br>
+Enter on **CMD** IN: C:\Program Files\MySQL\MySQL Server 5.7\bin> <br>
 And execute: mysql -u root -p<br>
 `show databases;` <br>
 `create database portal_noticias;` <br>
@@ -34,5 +34,8 @@ create table noticias(
 	noticia text,
 	data_criacao timestamp default current_timestamp);
 ```
+`insert into noticias(titulo, noticia)values('title of the notice', 'content of the notice');`<br>
+`select * from noticias;`<br>
+
 
 Curso de nodejs posusi um [grupo no Facebook](https://www.facebook.com/groups/458536931149217/)
