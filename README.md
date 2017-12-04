@@ -6,17 +6,22 @@ Client <- PROTOCOL -> Server <br>
 npm init
 ```
 ```
-npm install express -save
+npm i express -save
 ```
 ```
-npm install ejs --save
+npm i ejs --save
 ```
 ```
-npm install -g nodemon
+npm i -g nodemon
 ```
 ```
-npm install mysql --save
+npm i mysql --save
 ```
+###Using the 'Consign' it is possible include routes dynamically on app. Consign scan the specific folders and make the routes automatically.
+```
+npm i consign --save
+```
+
 
 
 ## To execute MySQL commands:
