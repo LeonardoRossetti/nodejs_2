@@ -3,6 +3,9 @@
  */
 var express = require('express'); 
 
+/**
+ * Consign will initialize global things for us into our app
+ */
 var consign = require('consign');
 
 /**
@@ -21,9 +24,13 @@ app.set('view engine', 'ejs');
  */
 app.set('views', './app/views');
 
-/**
- * Consign will read a folder on app called 'app/routes' and it will add the routes for us.
- */
-consign().include('app/routes').into(app);
+
+consign()
+    //Consign will read a folder on app called 'app/routes' and it will add the routes for us.
+    .include('app/routes') 
+    //Initialize the DB Connection
+    .then('config/dbConnection.js')
+    //Throw into app
+    .into(app);
 
 module.exports = app;
