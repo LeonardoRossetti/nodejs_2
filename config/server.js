@@ -30,6 +30,8 @@ consign()
     .include('app/routes') 
     //Initialize the DB Connection
     .then('config/dbConnection.js')
+    //Initialize all models info models folder
+    .then('app/models')
     //Throw into app
     .into(app);
 
