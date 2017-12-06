@@ -26,7 +26,7 @@ npm i consign --save
 
 ## To execute MySQL commands:
 Installed manual executable of mysql too.<br>
-Enter on **CMD** IN: C:\Program Files\MySQL\MySQL Server 5.7\bin> <br>
+Enter on **CMD** IN: C:\Program Files\MySQL\MySQL Server 5.7\bin <br>
 And execute: mysql -u root -p<br>
 `show databases;` <br>
 `create database portal_noticias;` <br>

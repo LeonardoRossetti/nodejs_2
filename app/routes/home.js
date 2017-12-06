@@ -1,6 +1,6 @@
 module.exports = function(app) {
     
     app.get('/', function(req, res){ //feito chamada para a pagina principal
-        res.render("home/index", {content: result});
+        res.render("home/index");
     });
 };
