@@ -9,6 +9,11 @@ var express = require('express');
 var consign = require('consign');
 
 /**
+ * We are using body-parser like a middleware to act on all requests and responses from HTML
+ */
+var bodyParser = require('body-parser');
+
+/**
  * Execute the function that the module express returns.
  */
 var app = express(); 
@@ -24,6 +29,8 @@ app.set('view engine', 'ejs');
  */
 app.set('views', './app/views');
 
+//urlencoded({extended: true}) -> Allow that our codify URI will be implemented by json 
+app.use(bodyParser.urlencoded({extended: true}))
 
 consign()
     //Consign will read a folder on app called 'app/routes' and it will add the routes for us.

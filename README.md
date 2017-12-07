@@ -21,6 +21,10 @@ npm i mysql --save
 ```
 npm i consign --save
 ```
+### Body-parser will act on all requests and responses from HTML
+```
+npm i body-parser --save
+```
 
 
 
