@@ -25,6 +25,10 @@ npm i consign --save
 ```
 npm i body-parser --save
 ```
+###to validate all the datas inputed on app
+```
+npm i express-validator --save
+```
 
 
 
