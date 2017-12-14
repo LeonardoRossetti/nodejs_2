@@ -1,6 +1,6 @@
 module.exports = function(application) {
     application.get('/include_news', function(req, res){
-        res.render("admin/form_add_notice");
+        res.render("admin/form_add_notice", {validacao:{}});
     });
 
     application.post('/noticias/salvar', function(req, res){
@@ -15,8 +15,9 @@ module.exports = function(application) {
         req.assert('noticia', 'Noticia é obrigatória').notEmpty();
         
         var erros = req.validationErrors();
+
         if (erros) {
-            res.render("admin/form_add_notice");
+            res.render("admin/form_add_notice", {validacao: erros});
             return;
         }        
         

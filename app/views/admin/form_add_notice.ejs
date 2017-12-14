@@ -8,6 +8,18 @@
 
 		<h1>Add News</h1>
 
+		<br	/>
+
+		<% if(validacao) { %>
+			<ul>
+				<% for(var i=0; i < validacao.length; i++){ %>
+					<li>
+						<%= validacao[i].msg %>
+					</li>		
+				<% } %>
+			</ul>
+		<% } %>
+
 		<form action="/noticias/salvar" method="POST">
 			<label>Título</label>
 			<input type="text" id="titulo" name="titulo" placeholder="Título da notícia" />
