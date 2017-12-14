@@ -35,8 +35,8 @@ app.set('view engine', 'ejs');
 app.set('views', './app/views');
 
 //urlencoded({extended: true}) -> Allow that our codify URI will be implemented by json 
-app.use(bodyParser.urlencoded({extended: true}))
-app.use(expressValidator);
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(expressValidator())
 
 consign()
     //Consign will read a folder on app called 'app/routes' and it will add the routes for us.
