@@ -34,6 +34,8 @@ app.set('view engine', 'ejs');
  */
 app.set('views', './app/views');
 
+//now we can acess this directory as if it were in the root of our app
+app.use(express.static('./app/public'));
 //urlencoded({extended: true}) -> Allow that our codify URI will be implemented by json 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(expressValidator())
